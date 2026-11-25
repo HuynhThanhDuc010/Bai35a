@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body {
+ margin: 0; min-height: 100vh; padding: 24px;
+ display: flex; align-items: center; justify-content: center;
+ font-family: Arial, sans-serif; color: #1e293b; background: #f1f5f9;
+}
+.container { width: 100%; max-width: 460px; }
+.register-form {
+ padding: 30px; background: white; border: 1px solid #e2e8f0;
+ border-radius: 12px; box-shadow: 0 8px 25px rgba(15,23,42,.08);
+}
+h1 { margin: 0 0 8px; text-align: center; font-size: 27px; }
+.description { margin: 0 0 25px; color: #64748b; text-align: center; line-height: 1.5; }
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; margin-bottom: 7px; font-weight: bold; }
+input[type="text"], input[type="email"], input[type="password"] {
+ width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 7px; font-size: 15px;
+}
+input:focus { outline: 2px solid #93c5fd; border-color: #2563eb; }
+.hint { display: block; margin-top: 6px; color: #64748b; font-size: 12px; }
+.error { display: block; min-height: 16px; margin-top: 5px; color: #dc2626; font-size: 12px; }
+.terms-row { display: flex; align-items: flex-start; gap: 9px; margin-top: 4px; }
+.terms-row input { margin-top: 3px; }
+.terms-row label { font-size: 14px; line-height: 1.4; }
+button {
+ width: 100%; padding: 13px; border: 0; border-radius: 7px;
+ background: #2563eb; color: white; font-size: 16px; font-weight: bold; cursor: pointer;
+}
+button:hover { background: #1d4ed8; }
+.form-message { margin: 14px 0 0; text-align: center; font-size: 14px; line-height: 1.5; }
+.form-message.success { color: #15803d; }
+.form-message.fail { color: #dc2626; }
+@media (max-width: 480px) {
+ body { padding: 14px; }
+ .register-form { padding: 22px 18px; }
+ h1 { font-size: 23px; }
+}
